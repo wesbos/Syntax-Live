@@ -25,19 +25,18 @@ background
   position: absolute;
   overflow: hidden;
   width: 1920px;
-  height: 1107px;
+  height: 1080px;
   margin-left: -960px;
-  margin-top: -553.5px;
+  margin-top: -540px;
   left: 50%;
   top: 50%;
-  padding: 0;
+  padding: 20px;
   background-color: none;
   transition: all 0.3s ease-out;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
-  padding: 0;
+  border: 1px solid #ff0 !important;
 }
 .slides > article > iframe {
   height: 100%;
