@@ -6,7 +6,7 @@ html
       script(src='slides.js')
       //- link(rel="stylesheet", href="./grid-styles.css")
       link(rel="stylesheet", href="./prism.css")
-
+      script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")
       link(href='styles.css'  rel='stylesheet' type='text/css')
       style.
         .grid { display: grid !important; grid-gap: 20px }
@@ -148,29 +148,16 @@ html
           img(src="http://wes.io/d612488c2497/content")
 
         article
-          h1 Underrated <br>or<br>Overrated?
+          h1 Unpopular <br>Opinions
+        - const ids = ['1109461037391187968','1109464690424344578', '1109513902721634304','1109795487320805376','1109562582409596929','1109481482421067776','1109504427562545153','1109516791565303808','1109465342215114752','1109581621680730113','1109461529055756288']
 
-        article
-          h1 Arrow Functions
-        article
-          h1 Downtown scooters
-        article
-          h1 Using Sass inside Styled Components
-        article
-          h1 Website that play sound in the interface
-        article
-          h1 Stress over new JS frameworks
-        article
-          h1 GraphQL
-        article
-          h1 ES6 Destructuring
-        article
-          h1 CSS Houdini
-        article
-          h1 Service Workers and Offline Applications
-        article
-          h1 Optional Chaining Proposal
-          p.sub people.wes?.names?.getLastName?()
+        for id in ids
+          article
+            blockquote(class="twitter-tweet" data-conversation="none" data-lang="en")
+              | TWeet Loading.. .<a href="https://twitter.com/thisdoesntmatter/status/#{id}"></a>
+
+
+        //- QA
         article
           h1 Q+EH with Scott and Wes
         article

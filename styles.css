@@ -36,6 +36,7 @@ background
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 1px solid #f00;
 }
 .slides > article > iframe {
   height: 100%;
@@ -431,6 +432,11 @@ article.smaller q::after {
 }
 .to-build {
   opacity: 0;
+}
+.twitter-tweet {
+  letter-spacing: 0;
+  -webkit-transform: scale(3.2) !important;
+          transform: scale(3.2) !important;
 }
 html {
   box-sizing: border-box;
