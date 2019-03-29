@@ -36,7 +36,6 @@ background
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #ff0 !important;
 }
 .slides > article > iframe {
   height: 100%;
@@ -435,7 +434,7 @@ article.smaller q::after {
 }
 html {
   box-sizing: border-box;
-  background: url("https://syntax.fm/static/background.jpg");
+  background: #000 url("https://syntax.fm/static/background.jpg");
 }
 *,
 *:before,
