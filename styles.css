@@ -36,7 +36,7 @@ background
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #f00;
+  border: 1px solid #fff;
 }
 .slides > article > iframe {
   height: 100%;
