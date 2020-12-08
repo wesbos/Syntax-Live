@@ -614,6 +614,13 @@ pre {
   font-size: 30px;
   line-height: 1.2;
 }
+iframe[src*="twitter"] {
+  width: 550px;
+  height: 300px !important;
+  background: transparent;
+  transform: scale(2);
+  border: 0;
+}
 
 
 /*# sourceMappingURL=/styles.de1f5fda.css.map */

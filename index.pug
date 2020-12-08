@@ -5,7 +5,7 @@ html
       meta(charset='utf-8')
       script(src='./slides.js')
       link(rel="stylesheet", href="./prism.css")
-      script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")
+      //- script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")
       link(href='./styles.styl'  rel='stylesheet' type='text/css')
       style.
         .grid { display: grid !important; grid-gap: 20px }
@@ -101,12 +101,15 @@ html
           console.log(`What a year ${new Date() .getFullYear()} was!`})
       article
         h1 Hot Take Tweets
-      - const ids = ['1336370113247928327', '1336367986358140933', '1336368152461111301', '1336371300705689600', '1336371273316839427']
+      - const ids = ['1336370113247928327', '1336367986358140933', '1336368152461111301', '1336371300705689600', '1336371273316839427','1336368213081395200', '1336378139388358659', '1336370630183301120', '1336367982109466632', '1336373799437135872','1336386486179160066', '1336383808359321603', '1336383665610305544', '1336383932854624257', '1336371300705689600', '1336368415817273345']
 
       for id in ids
         article
-          blockquote(class="twitter-tweet" data-conversation="none" data-lang="en")
-            | TWeet Loading.. .<a href="https://twitter.com/thisdoesntmatter/status/#{id}"></a>
+          h2 Loading tweet
+          iframe(src=`https://platform.twitter.com/embed/index.html?dnt=true&embedId=twitter-widget-0&frame=false&hideCard=false&hideThread=true&id=${id}&lang=en&origin=http%3A%2F%2Flocalhost%3A1234%2F%2322&theme=light&widgetsVersion=ed20a2b%3A1601588405575&width=550px`)
+
+          //- blockquote(class="twitter-tweet" data-conversation="none" data-lang="en")
+          //-   | Tweet Loading.. .<a href="https://twitter.com/thisdoesntmatter/status/#{id}"></a>
 
 
       //- QA
