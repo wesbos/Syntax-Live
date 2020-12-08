@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "parcel index.pug",
-    "build": "parcel build index.pug --out-dir docs --public-url /syntax-live/"
+    "build": "parcel build index.pug --out-dir docs --public-url /Syntax-Live/"
   },
   "author": "",
   "license": "ISC",

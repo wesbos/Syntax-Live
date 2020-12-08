@@ -1,5 +1,7 @@
 # SYNTAX LIVE
 
+You can view the slides at <https://wesbos.github.io/Syntax-Live/>
+
 YAAAAAA
 
 
@@ -14,3 +16,5 @@ you do the hokey pokey
 and you edit `index.pug`
 
 that's what it's all about!
+
+
