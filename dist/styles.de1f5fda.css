@@ -16,9 +16,8 @@ body {
   left: 0;
   top: 0;
   color: #f21818;
-background
   position: absolute;
-  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 .slides > article {
   display: block;
@@ -606,6 +605,14 @@ body.square .slides > article .huge {
   height: 700px;
   width: 700px;
   border: 10px solid #f00;
+}
+pre {
+  text-align: left;
+  padding: 50px;
+  font-family: 'Operator Mono', 'Dank Mono', 'Courier New', Courier, monospace;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.2;
 }
 
 
