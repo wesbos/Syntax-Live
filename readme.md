@@ -11,6 +11,6 @@ Then you shake it all about
 
 you do the hokey pokey
 
-and you edit `index.jade`
+and you edit `index.pug`
 
 that's what it's all about!

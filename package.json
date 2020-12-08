@@ -1,5 +1,5 @@
 {
-  "name": "css-grid-talk",
+  "name": "syntax-live",
   "version": "1.0.0",
   "description": "",
   "main": "slides.js",
@@ -7,18 +7,13 @@
     "example": "examples"
   },
   "scripts": {
-    "start": "gulp"
+    "start": "parcel index.pug",
+    "build": "parcel build index.pug"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.24.5",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-jade": "^1.1.0",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-plumber": "^1.2.0",
-    "gulp-stylus": "^2.7.0",
-    "request": "^2.87.0"
+    "browser-sync": "^2.26.13",
+    "request": "^2.88.2"
   }
 }

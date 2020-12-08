@@ -141,9 +141,9 @@ if (typeof document !== 'undefined' && !('classList' in document.createElement('
 function getSlideEl(no) {
   if ((no < 0) || (no >= slideEls.length)) {
     return null;
-  } 
+  }
     return slideEls[no];
-  
+
 }
 
 function updateSlideClass(slideNo, className) {
@@ -395,9 +395,9 @@ function setupInteraction() {
 function isChromeVoxActive() {
   if (typeof (cvox) == 'undefined') {
     return false;
-  } 
+  }
     return true;
-  
+
 }
 
 function speakAndSyncToNode(node) {
@@ -513,6 +513,7 @@ function addEventListeners() {
 /* Initialization */
 
 function addPrettify() {
+  return;
   let els = document.querySelectorAll('pre');
   for (var i = 0, el; (el = els[i]); i++) {
     if (!el.classList.contains('noprettyprint')) {

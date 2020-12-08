@@ -111,34 +111,29 @@ background
 }
 .slides > article.far-past {
   display: block;
-  -webkit-transform: translate(-4000px);
-          transform: translate(-4000px);
+  transform: translate(-4000px);
   display: none;
 }
 .slides > article.past {
   display: flex;
-  -webkit-transform: scale(0.5) translate(-1920px);
-          transform: scale(0.5) translate(-1920px);
+  transform: scale(0.5) translate(-1920px);
   opacity: 0.3;
   display: none;
 }
 .slides > article.current {
   display: flex;
-  -webkit-transform: translate(0);
-          transform: translate(0);
+  transform: translate(0);
   z-index: 10;
 }
 .slides > article.next {
   display: flex;
-  -webkit-transform: scale(0.5) translate(1920px);
-          transform: scale(0.5) translate(1920px);
+  transform: scale(0.5) translate(1920px);
   opacity: 0.3;
   display: none;
 }
 .slides > article.far-next {
   display: flex;
-  -webkit-transform: translate(4000px);
-          transform: translate(4000px);
+  transform: translate(4000px);
   display: none;
 }
 .slides > article {
@@ -434,8 +429,7 @@ article.smaller q::after {
 }
 .twitter-tweet {
   letter-spacing: 0;
-  -webkit-transform: scale(3.2) !important;
-          transform: scale(3.2) !important;
+  transform: scale(3.2) !important;
 }
 html {
   box-sizing: border-box;
@@ -474,23 +468,20 @@ small {
   line-height: 1.2;
 }
 .sub {
-  -webkit-transform: skew(0, -4deg);
-          transform: skew(0, -4deg);
+  transform: skew(0, -4deg);
   margin-top: 10px;
   font-weight: 200;
   color: #fff !important;
   font-size: 60px;
 }
 h2 + .sub {
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 small {
   font-size: 25px;
 }
 h1 {
-  -webkit-transform: skew(0, -4deg) rotateY(20deg);
-          transform: skew(0, -4deg) rotateY(20deg);
+  transform: skew(0, -4deg) rotateY(20deg);
   font-size: 200px;
   color: #e1ab3a;
   letter-spacing: -2px;
@@ -519,8 +510,7 @@ h2 a {
   color: #e1ab3a;
 }
 h2.skew {
-  -webkit-transform: skew(0, -4deg);
-          transform: skew(0, -4deg);
+  transform: skew(0, -4deg);
   display: inline-block;
 }
 h2 + img {
@@ -617,3 +607,6 @@ body.square .slides > article .huge {
   width: 700px;
   border: 10px solid #f00;
 }
+
+
+/*# sourceMappingURL=/styles.de1f5fda.css.map */
