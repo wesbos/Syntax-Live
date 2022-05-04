@@ -25,7 +25,7 @@ html
         p.sub Wednesdays
       article
         h1: mark Supper Club™
-        p.sub Fridays
+        p.sub Fridays (NEW!)
       article
         h1: mark Hi, I&apos;m Scott Tolinkski
         p.sub Denver, Co 🇺🇸
@@ -40,18 +40,60 @@ html
         h1 The Plan For Today
       article
         ul.build
-          //- li All I want for Christmas in React is...
-          li JS or Nay-S?
-          //- li Overrated vs Underrated
-          li Syntax Error
           li JavaScript Hot Take Tweets
+          li Kickin' it Old School
+          li JS or Nay-S?
+          li Syntax Error
           li Q + EH with Scott and Wes
 
       article
-        img(src="./images/qr.png")
+        img(width="400" src="./images/sick-qr.png")
         h1 Q+EH - Coming up!
         h2.skew: a(href="https://pigeonhole.at/SICK" target="_blank") pigeonhole.at/SICK
 
+      //- HOT TAKE TWEETS
+      article
+        h1 Hot Take Tweets
+      - const ids = ['1520075743279017984', '1520080208363241472', '1520076284549906432', '1520075681094381573', '1520076276006256641', '1520076916358795264', '1520076722615463936', '1520076926039343106', '1520087085889249281', '1520083587319713793', '1520108075486699521', '1520082336263585793', '1520080730126229510', '1520094433387155459', '1520092091828813832', '1520124419812823040', '1520085094274408448', '1520079077390041088', '1520084624013209601', '1520105922810548228']
+
+      for id in ids
+        article
+          h2 Loading tweet
+          iframe(src=`https://platform.twitter.com/embed/index.html?dnt=true&embedId=twitter-widget-0&frame=false&hideCard=false&hideThread=true&id=${id}&lang=en&origin=http%3A%2F%2Flocalhost%3A1234%2F%2322&theme=light&widgetsVersion=ed20a2b%3A1601588405575&width=550px`)
+
+      article
+        h1 Kickin' it Old School
+
+      article
+        img(src="./images/jQuery.png")
+
+      article
+        img(src="./images/zoom.png")
+
+      article
+        h2 PNG Fix
+        img(width="1500" src="./images/pngfix.png")
+
+      article
+        img(src="./images/swap-image.png")
+
+      article
+        h2 What is this Technique?
+        img(src="./images/sliding-doors.png")
+
+      article
+        img(src="./images/that.png")
+
+      article
+        img(src="./images/ie.png")
+
+      article
+        img(src="./images/opera.png")
+
+      article
+        img(src="./images/bang.png")
+
+      //- JS OR NAY S
       article
         h1 JS or NAYS
         img(width="400" src="./images/sick-qr.png")
@@ -63,39 +105,26 @@ html
         h2 <mark>You</mark><br>vote on if we are pulling your leg or not.
         h2.medium.white PigeonHole.at/SICK
 
-      //- article
-        h3(style="position: absolute;bottom: 0px; right:0; line-height: 20px; padding: 20px; color: white; background: black; font-size: 40px;" ) PigeonHole.at/TASTY
-        iframe(src="https://pigeonhole.at/p/171294")
-
+      //- Syntax Error
       article
         h1 Syntax Error
-        p We show eachother code with no syntax highlighting, and the other person must find out what is wrong with it.
+        p We show each other code with no syntax highlighting, and the other person must find out what is wrong with it.
 
       article
         h3 For Wes:
-        img(src="./images/S1.png")
+        img(src="./images/scotts-q.png")
 
       article
         h3 For Scott:
-        pre.
-          const people = [
-            { name: 'wes bos', age: 32 },
-            { name: 'scott tolinski', age: 34 }
-          ];
-
-          const names = people.map(({
-              name,
-              parts = name.split(' '),
-              first = parts[0],
-              last = parts[1] }) => { first, last }));
+        img(src="./images/wes2.png")
 
       article
         h3 For Wes:
-        img(src="./images/S2.png")
+        img(src="./images/scott3.png")
 
       article
         h3 For Scott:
-        img.wide(src="https://wes.io/rRu0oWqv/content")
+        img(src="./images/wes-issue-2.png")
 
       article
         h3 For Wes:
@@ -103,19 +132,7 @@ html
 
       article
         h3 For Scott:
-        pre.
-          console.log(`What a year ${new Date() .getFullYear()} was!`})
-      article
-        h1 Hot Take Tweets
-      - const ids = ['1520075743279017984', '1520080208363241472', '1520076284549906432', '1520075681094381573', '1520076276006256641', '1520076916358795264', '1520076722615463936', '1520076926039343106', '1520087085889249281', '1520083587319713793', '1520108075486699521', '1520082336263585793', '1520080730126229510', '1520094433387155459', '1520092091828813832', '1520124419812823040', '1520085094274408448', '1520079077390041088', '1520084624013209601', '1520105922810548228']
-
-      for id in ids
-        article
-          h2 Loading tweet
-          iframe(src=`https://platform.twitter.com/embed/index.html?dnt=true&embedId=twitter-widget-0&frame=false&hideCard=false&hideThread=true&id=${id}&lang=en&origin=http%3A%2F%2Flocalhost%3A1234%2F%2322&theme=light&widgetsVersion=ed20a2b%3A1601588405575&width=550px`)
-
-          //- blockquote(class="twitter-tweet" data-conversation="none" data-lang="en")
-          //-   | Tweet Loading.. .<a href="https://twitter.com/thisdoesntmatter/status/#{id}"></a>
+        img(src="./images/react-list.png")
 
       //- QA
       article
