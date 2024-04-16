@@ -12,6 +12,7 @@ grad = linear-gradient(30deg, #d2ff52 0%, #03fff3 100%)
 
 html {
   box-sizing: border-box;
+  --yellow: #FABF46;
   background: black url("https://syntax.fm/static/background.jpg");
 }
 
@@ -53,7 +54,7 @@ small
   font-size 25px
 
 h1
-  transform skew(0, -4deg) rotateY(20deg)
+  transform skew(0, -1deg) rotateY(10deg)
   font-size 200px
   color yellow
   letter-spacing -2px
@@ -160,6 +161,7 @@ body.square
       margin-top (h/2) * -1px
       border-radius 0
       border: 1px solid white
+      background black
       h2
         font-size 110px
       p, li, small
@@ -197,3 +199,52 @@ iframe[src*="twitter"]
   background: transparent;
   transform: scale(2)
   border 0
+
+
+img.fit {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-height: none;
+}
+
+/*
+  <article>
+    <img>
+  </article>
+*/
+article:has(img:only-child) {
+  padding: 0;
+  align-content: stretch !important;
+  & img {
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: contain;
+  }
+}
+
+/*
+  <article>
+    <h2></h2>
+    <img>
+  </article>
+*/
+
+article:has(h3 + img):not(:has(:nth-child(3))) {
+  gap: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  img {
+    width: 100%;
+    height 100%
+    object-fit: contain;
+  }
+}
+
+.columns {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+

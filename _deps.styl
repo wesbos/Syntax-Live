@@ -60,48 +60,20 @@ h = 1080px
   top: 50%;
   padding: 20px;
   background-color: none;
-  transition: all 0.3s ease-out;
+  // transition: all 0.3s ease-out;
+  transition: none;
   justify-content center
   align-items: center
   flex-direction column
+  border 3px solid var(--yellow)
+  border-radius: 50px
+  padding: 20px
   & > iframe {
     height: 100%
-  }
-  &.side {
-    align-content: center;
-    &.current {
-      display: grid !important;
-    }
-    h2{
-      font-size 50px
-      letter-spacing: 1px;
-    }
-    grid-gap: 50px;
-    grid-template-columns: 1.2fr 1fr;
-    h2 {
-      grid-column: 1 / -1;
-    }
-    pre {
-      background: none;
-      border:0;
-      box-shadow: none;
-    }
-    style, code {
-      line-height: 1.3;
-      border: 0;
-      white-space: pre-wrap;
-      text-align: left;
-      font-family: 'Operator Mono', courier;
-      color: white;
-      font-size: 40px;
-      font-weight: 300;
-    }
   }
   & > * {
     display block
     clear both
-    // min-width 100%
-    flex-wrap wrap
   }
   & > img {
     min-width: 0;
@@ -160,7 +132,10 @@ h = 1080px
 
 }
 .slides > article.current {
-  display: flex;
+  display: grid;
+  align-content: center
+  gap 20px
+  background black
   transform: translate(0);
   z-index 10
 }
@@ -193,7 +168,7 @@ b {
   color: rgb(0, 102, 204);
 }
 .yellow {
-  color: rgb(255, 211, 25);
+  color: var(--yellow);
 }
 .green {
   color: #29E254;
@@ -209,11 +184,11 @@ b {
 }
 
 a {
-  color: yellow;
+  color: var(--yellow);
 }
 
-::-moz-selection { background: yellow; }
-::selection      { background: yellow; }
+::-moz-selection { background: var(--yellow); }
+::selection      { background: var(--yellow); }
 
 
 p {
@@ -376,7 +351,6 @@ iframe {
 
 img {
   max-width: 100%;
-  max-height:570px;
 }
 
 h3 + iframe {

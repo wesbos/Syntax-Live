@@ -25,15 +25,15 @@ html
         p.sub Wednesdays
       article
         h1: mark Supper Club™
-        p.sub Fridays (NEW!)
+        p.sub Fridays
       article
         h1: mark Hi, I&apos;m Scott Tolinski
         p.sub Denver, Co 🇺🇸
-        p.sub @stolinski Tweet and Gram
+        p.sub @stolinski 𝕏 and Gram
       article
         h1: mark Hi, I&apos;m<br>Wes Bos
         p.sub Hamilton, On 🇨🇦
-        p.sub @wesbos Tweet and Gram
+        p.sub @wesbos 𝕏 and Gram
       article
         h1 Today is a Live Podcast!
       article
@@ -48,18 +48,9 @@ html
 
       article
         img(width="400" src="./images/sick-qr.png")
-        h1 Q+EH - Coming up!
+        h1 Q+EH-Coming up!
         h2.skew: a(href="https://pigeonhole.at/SICK" target="_blank") pigeonhole.at/SICK
 
-      //- HOT TAKE TWEETS
-      article
-        h1 Hot Take Tweets
-      - const ids = ['1520075743279017984', '1520080208363241472', '1520092091828813832', '1520076284549906432', '1520075681094381573', '1520076276006256641', '1520076916358795264', '1520076722615463936', '1520076926039343106', '1520087085889249281', '1520108075486699521', '1520082336263585793', '1520080730126229510', '1520094433387155459', '', '1520124419812823040', '1520085094274408448', '1520079077390041088']
-
-      for id in ids
-        article
-          h2 Loading tweet
-          iframe(src=`https://platform.twitter.com/embed/index.html?dnt=true&embedId=twitter-widget-0&frame=false&hideCard=false&hideThread=true&id=${id}&lang=en&origin=http%3A%2F%2Flocalhost%3A1234%2F%2322&theme=light&widgetsVersion=ed20a2b%3A1601588405575&width=550px`)
 
       article
         h1 Kickin' it Old School
@@ -100,7 +91,7 @@ html
         h1 Syntax Error
         p We show each other code with no syntax highlighting, and the other person must find out what is wrong with it.
 
-      article
+      article.grid
         h3 For Wes:
         img(src="./images/scotts-q.png")
 
