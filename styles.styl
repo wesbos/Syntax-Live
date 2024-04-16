@@ -27,10 +27,12 @@ h1,h2,h3,h4,h5,h6
   font-weight 900
   line-height: auto
   text-shadow 5px 5px 0 alpha(black, 1)
+  text-align: center
 
 p, a, li
   text-shadow 4px 3px 0 rgba(0,0,0,0.3)
   margin 15px 0
+  text-align: center
 
 p, li, small
   color white
@@ -215,11 +217,12 @@ img.fit {
 */
 article:has(img:only-child) {
   padding: 0;
+  grid-template-rows: minmax(0, 1fr);
   align-content: stretch !important;
   & img {
     width: 100%;
     height: 100%;
-    max-height: none;
+    max-height: 63cqh;
     object-fit: contain;
   }
 }
@@ -234,7 +237,7 @@ article:has(img:only-child) {
 article:has(h3 + img):not(:has(:nth-child(3))) {
   gap: 0;
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto minmax(0, 1fr);
   img {
     width: 100%;
     height 100%
