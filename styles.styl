@@ -28,6 +28,7 @@ h1,h2,h3,h4,h5,h6
   line-height: auto
   text-shadow 5px 5px 0 alpha(black, 1)
   text-align: center
+  text-wrap balance
 
 p, a, li
   text-shadow 4px 3px 0 rgba(0,0,0,0.3)
@@ -250,4 +251,13 @@ article:has(h3 + img):not(:has(:nth-child(3))) {
   align-items: center;
   gap: 100px;
 }
+.balance
+  text-wrap balance
 
+
+input[type="checkbox"]:has(+ img.blur)
+  display none
+input[type="checkbox"]:checked + img.blur
+  filter blur(0px)
+.blur
+  filter blur(10px)

@@ -8,8 +8,8 @@ html
       //- script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")
       link(href='./styles.styl'  rel='stylesheet' type='text/css')
   body
-    section.slides.layout-regular.template-default
 
+    section.slides.layout-regular.template-default
       article.first
         img(src="https://syntaxfm.github.io/brand/Syntax%20Wordmark%20Stacked%20-%20yellow.svg")
       article
@@ -30,6 +30,8 @@ html
         p.sub Hamilton, On 🇨🇦
         p.sub @wesbos 𝕏 and Gram
       article
+        img(src="./images/everyone.png")
+      article
         h1 Today is a Live Podcast!
       article
         h1 The Plan For Today
@@ -45,11 +47,36 @@ html
         h1 Q+EH-Coming up!
         h2.skew: a(href="https://pigeonhole.at/SICK" target="_blank") pigeonhole.at/SICK
 
-
       //- Syntax Error
       article
-        h1 .map().filter().reduce()
-        p We give eachother a chained map/filter/reduce, and the other person must find out what the output is.
+        h2 .map()<br>.filter()<br>.reduce()
+        p.balance We give eachother a chained map/filter/reduce, and the other person must find out what the output is.
+
+      article
+        p.small For Scott
+        label
+          input(type="checkbox")
+          img.blur(src="./images/reduce-wes.png")
+
+      article
+        p.small Answer
+        label
+          input(type="checkbox")
+          img.blur(src="./images/map-answer-wes.png")
+
+      article
+        p.small For Wes
+        label
+          input(type="checkbox")
+          //- TODO: Scott add your image here
+          img.blur(src="./images/reduce-wes.png")
+
+      article
+        p.small Answer
+        label
+          input(type="checkbox")
+          //- TODO: Scott add your image here
+          img.blur(src="./images/map-answer-wes.png")
 
       article
         h1 Syntax Error
