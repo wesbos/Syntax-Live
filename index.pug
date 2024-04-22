@@ -4,8 +4,8 @@ html
       title Syntax Live
       meta(charset='utf-8')
       script(src='./slides.js')
+      script(src='./clickme.js' type="module")
       link(rel="stylesheet", href="./prism.css")
-      //- script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")
       link(href='./styles.styl'  rel='stylesheet' type='text/css')
   body
 
@@ -13,15 +13,6 @@ html
       article.first
         img(width="800" src="https://syntaxfm.github.io/brand/Syntax%20Wordmark%20Stacked%20-%20yellow.svg")
         img(src="./images/sentry.svg")
-      article
-        h1: mark Hasty Treats™
-        p.sub Mondays
-      article
-        h1: mark Tasty Treats™
-        p.sub Wednesdays
-      article
-        h1: mark Supper Club™
-        p.sub Fridays
       article
         h1: mark Hi, I&apos;m Scott Tolinski
         p.sub Denver, Co 🇺🇸
@@ -32,6 +23,15 @@ html
         p.sub @wesbos 𝕏 and Gram
       article
         img(src="./images/everyone.png")
+      article
+        h1: mark Hasty Treats™
+        p.sub Mondays
+      article
+        h1: mark Tasty Treats™
+        p.sub Wednesdays
+      article
+        h1: mark Supper Club™
+        p.sub Fridays
       article
         h1 Today is a Live Podcast!
       article
@@ -52,7 +52,7 @@ html
       //- Syntax Error
       article
         h2 .map()<br>.filter()<br>.reduce()
-        p.balance We give eachother a chained map/filter/reduce, and the other person must find out what the output is.
+        p.balance We give each other a chained map/filter/reduce, and the other person must find out what the output is.
 
       article
         p.small For Scott
@@ -128,7 +128,7 @@ html
           li <mark>A</mark> Body has an 8px margin
 
       article
-        p <mark>Q</mark>React DOM's useFormState was recently replaced with what hook for working with server components?
+        p <mark>Q</mark> React DOM's useFormState was recently replaced with what hook for working with server components?
         .build
           li <mark>A:</mark> useActionState
       article

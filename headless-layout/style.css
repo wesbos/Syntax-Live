@@ -1,0 +1,44 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  border: 1px solid grey;
+  border-radius: 50px;
+  margin: 0 auto;
+  width: 500px;
+  background: linear-gradient(0deg, rgb(255 0 0 / 0.2), rgb(0 0 255 / 0.2));
+  text-align: center;
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 80%;
+  margin-bottom: -150px;
+}
+
+.sticker {
+  border-radius: 10px;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
+  width: 80px;
+  height: 80px;
+  position: relative;
+  margin-top: -30px;
+  margin: 0 auto;
+  font-size: 20px;
+  background: white;
+}
+
+ul {
+  list-style: none;
+  margin: 0 auto;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+li {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 0 50px;
+}
