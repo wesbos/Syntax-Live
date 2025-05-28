@@ -7,14 +7,16 @@
     "example": "examples"
   },
   "scripts": {
-    "start": "parcel index.pug",
-    "build": "parcel build index.pug --out-dir docs --public-url /Syntax-Live/"
+    "start": "vite",
+    "build": "vite build --out-dir docs --base=/Syntax-Live//"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@parcel/transformer-pug": "^2.12.0",
     "@parcel/transformer-stylus": "^2.12.0",
-    "parcel-bundler": "^1.12.4"
-  }
+    "parcel-bundler": "^1.12.4",
+    "vite": "^6.3.5"
+  },
+  "packageManager": "pnpm@9.10.0+sha1.216899f511c8dfde183c7cb50b69009c779534a8"
 }

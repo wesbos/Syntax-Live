@@ -1,5 +1,3 @@
-
-
 const people = [
   { name: 'wes bos', age: 32 },
   { name: 'scott tolinski', age: 34 }
@@ -61,18 +59,24 @@ export default async function saveUser(user: User): Promise<UserDocument> {
   return response.json();
 }
 
+type Podcast = {
+  id: number;
+  title: string;
+};
+
+
 // Syntax Error 2 For Scott: TSX
-function UserCard({ user }: { user: User } = { id: 0, name: '' }) {
+function PodcastCard({ podcast }  { podcast: Podcast } = { podcast: { id: 69, title: 'Syntax' } }) {
   return (
     <div>
-      <h2>{user.name}</h2>
-      <p>{user.id}</p>
+      <h2>{podcast.title}</h2>
+      <p>{podcast.id}</p>
     </div>
   );
 }
 
 // Syntax error 3: CSS
-const css = /* css */ `
+const css = /* md*/ `
 
 
   .wiggle {
@@ -80,6 +84,33 @@ const css = /* css */ `
     transform: translateX(calc(var(--move) * -1px)) translateY(var(--move));
   }
 
+  .child {
+    background: red;
+    :is(:hover, :focus) & & {
+      background: blue;
+    }
+  }
+
 
 
 `;
+
+type Sandwich = {
+  name: string;
+  ingredients: string[];
+}
+
+type Pizza = {
+  name: string;
+  toppings: string[];
+}
+
+type PreparedFood<T> = T & {
+  expires: Date;
+}
+
+const pizza: PreparedFood<Pizza> = {
+  name: 'Pizza',
+  toppings: ['cheese', 'pepperoni'],
+  expires: new Date(Date.now() + 1000 * 60 * 60 * 24),
+}
