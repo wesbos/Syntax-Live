@@ -12,11 +12,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@parcel/transformer-pug": "^2.12.0",
-    "@parcel/transformer-stylus": "^2.12.0",
-    "parcel-bundler": "^1.12.4",
-    "vite": "^6.3.5"
+  "devDependencies": {
+    "stylus": "^0.63.0",
+    "vite": "^8.0.2"
   },
   "packageManager": "pnpm@9.10.0+sha1.216899f511c8dfde183c7cb50b69009c779534a8"
 }
