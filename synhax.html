@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employees — Synhax scaffold</title>
+    <style>
+      :root {
+        --color-border-search: #6366f1;
+        --color-text-muted: #6b7280;
+        --color-border-card: #e5e7eb;
+        --color-text: #111111;
+        --color-surface: #ffffff;
+        --color-row-hover: #f3f4f6;
+        --color-button-hover: #f9fafb;
+        --color-shadow: rgb(0 0 0 / 0.04);
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      body {
+        background: black;
+        font-family: system-ui, sans-serif;
+        margin: 0;
+        color: var(--color-text);
+        font-size: 15px;
+        line-height: 15px;
+      }
+
+      .app {
+        width: 600px;
+        height: 400px;
+        padding: 25px;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        overflow: hidden;
+
+        & .search {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          padding: 5px 5px;
+          border: 1px solid var(--color-border-search);
+          border-radius: 1000px;
+          flex-shrink: 0;
+
+          & svg {
+            flex-shrink: 0;
+            color: var(--color-text-muted);
+          }
+
+          & input {
+            flex: 1;
+            border: 0;
+            outline: 0;
+            font: inherit;
+            min-width: 0;
+
+            &::placeholder {
+              color: var(--color-text-muted);
+            }
+          }
+        }
+
+        & .card {
+          border: 1px solid var(--color-border-card);
+          border-radius: 5px;
+          box-shadow: 0 1px 2px var(--color-shadow);
+          background: var(--color-surface);
+          padding: 5px 0;
+          flex: 1;
+          min-height: 0;
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+
+          & .panel {
+            flex: 1;
+            min-height: 0;
+            overflow: hidden;
+          }
+
+          & .group {
+            padding: 0 5px;
+            flex-shrink: 0;
+          }
+
+          & .title {
+            margin: 0 0 5px;
+            font-size: 10px;
+            line-height: 10px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--color-text-muted);
+          }
+
+          & .list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+
+          & .Employee {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            padding: 2px 5px;
+            margin: 0 -5px;
+            border-radius: 5px;
+
+            &:hover {
+              background: var(--color-row-hover);
+            }
+
+            & img {
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              object-fit: cover;
+              flex-shrink: 0;
+            }
+          }
+
+          & .info {
+            min-width: 0;
+          }
+
+          & .name {
+            display: block;
+            font-weight: 700;
+            line-height: 15px;
+          }
+
+          & .meta {
+            display: block;
+            font-size: 10px;
+            line-height: 10px;
+            color: var(--color-text-muted);
+            margin-top: 1px;
+          }
+
+          & .divider {
+            border: 0;
+            border-top: 1px solid var(--color-border-card);
+            margin: 5px 0;
+            flex-shrink: 0;
+          }
+
+          & .footer {
+            flex-shrink: 0;
+            padding: 0 5px;
+          }
+
+          & .add {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 2px 5px;
+            margin: 0;
+            font: inherit;
+            color: var(--color-text);
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+            border-radius: 5px;
+            line-height: 15px;
+
+            &:hover {
+              background: var(--color-button-hover);
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="app">
+      <label class="search" for="employee-search">
+        <svg
+          width="15"
+          height="15"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+        <input
+          id="employee-search"
+          type="search"
+          name="q"
+          placeholder="Search by name or department..."
+          autocomplete="off"
+        />
+      </label>
+
+      <section class="card" aria-label="Employee directory">
+        <div class="panel">
+          <div class="group">
+            <h2 class="title" id="pinned-heading">Pinned</h2>
+            <ul class="list" aria-labelledby="pinned-heading">
+              <li class="Employee">
+                <img
+                  src="https://i.pravatar.cc/80?img=5"
+                  width="30"
+                  height="30"
+                  alt=""
+                />
+                <div class="info">
+                  <span class="name">Priya Desai</span>
+                  <span class="meta"
+                    >p.desai@corporate.co | Engineering Lead</span
+                  >
+                </div>
+              </li>
+              <li class="Employee">
+                <img
+                  src="https://i.pravatar.cc/80?img=12"
+                  width="30"
+                  height="30"
+                  alt=""
+                />
+                <div class="info">
+                  <span class="name">Jordan Okonkwo</span>
+                  <span class="meta"
+                    >j.okonkwo@corporate.co | Creative Director</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="group">
+            <h2 class="title" id="all-heading">All employees</h2>
+            <ul class="list" aria-labelledby="all-heading">
+              <li class="Employee">
+                <img
+                  src="https://i.pravatar.cc/80?img=9"
+                  width="30"
+                  height="30"
+                  alt=""
+                />
+                <div class="info">
+                  <span class="name">Morgan Ellis</span>
+                  <span class="meta"
+                    >m.ellis@corporate.co | Marketing Specialist</span
+                  >
+                </div>
+              </li>
+              <li class="Employee">
+                <img
+                  src="https://i.pravatar.cc/80?img=11"
+                  width="30"
+                  height="30"
+                  alt=""
+                />
+                <div class="info">
+                  <span class="name">Sam Park</span>
+                  <span class="meta">s.park@corporate.co | UX Designer</span>
+                </div>
+              </li>
+              <li class="Employee">
+                <img
+                  src="https://i.pravatar.cc/80?img=32"
+                  width="30"
+                  height="30"
+                  alt=""
+                />
+                <div class="info">
+                  <span class="name">Paige Thompson</span>
+                  <span class="meta"
+                    >p.thompson@corporate.co | Product Manager</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="footer">
+          <button class="add" type="button">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+            Add Member
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
