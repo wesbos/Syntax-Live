@@ -23,7 +23,7 @@ function Podcast({ mp3Url }) {
 
 // Three
 
-console.log(`What a year ${new Date() .getFullYear()} was!`})
+console.log(`What a year ${new Date()      .getFullYear()} was!`})
 
 
 // React Miami
@@ -76,7 +76,7 @@ function PodcastCard({ podcast }  { podcast: Podcast } = { podcast: { id: 69, ti
 }
 
 // Syntax error 3: CSS
-const css = /* md*/ `
+const css = /* css*/ `
 
 
   .wiggle {
@@ -90,9 +90,6 @@ const css = /* md*/ `
       background: blue;
     }
   }
-
-
-
 `;
 
 type Sandwich = {
@@ -114,3 +111,67 @@ const pizza: PreparedFood<Pizza> = {
   toppings: ['cheese', 'pepperoni'],
   expires: new Date(Date.now() + 1000 * 60 * 60 * 24),
 }
+
+
+// Above The Rim Syntax Erros
+
+/* Wes 1 - For Loop */
+
+for (let i = 0; i < 4_20_000; i++;) {
+  console.log(i);
+}
+
+// Correct:
+
+for (let i = 0; i < 4_20_000; i++) {
+  console.log(i);
+}
+
+
+/* Wes 2 - Conditional Spread */
+const isCool = true;
+const coolPerson = {
+  name: 'Wes',
+  isCool && ...({ age: 42 }),
+}
+
+
+/* Wes 3 - CSS Spacing */
+
+/*css*/`
+.wiggle {
+  rotate: calc(3turn-10px);
+}
+
+/* Wes 4 - CSS IF statements */
+
+/*css*/`
+.card {
+  border: 3px yellow if (
+    style(--theme: dotted): dashed;
+    style(--theme: oldschool): inset;
+    else: solid;
+  );
+}
+
+`;
+
+/* Wes 5 - Deep Ternary */
+/* see deep-tern.tsx */
+
+
+/*
+
+CSS not setting unit
+
+CSS calc spacing -
+ /* ❌ */
+
+
+obj?.prop = 1;
+
+obj.?['prop'] = 10;
+
+Guess the Token Count
+
+Guess the programming Language
