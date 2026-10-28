@@ -261,6 +261,51 @@ input[type="checkbox"]:checked + img.blur
   filter blur(10px)
 
 
+.slides > article.which-llm
+  grid-template-rows: auto minmax(0, 1fr)
+  align-content: stretch
+  h3
+    margin 0
+  .versus
+    display grid
+    grid-template-columns 1fr 1fr
+    grid-template-rows minmax(0, 1fr)
+    align-self stretch
+    gap 30px
+    min-height 0
+    &.crop img
+      width 100%
+      height 100%
+      object-fit cover
+      object-position top
+  figure
+    margin 0
+    display grid
+    grid-template-rows minmax(0, 1fr) auto
+    gap 15px
+    min-height 0
+    transition opacity 0.3s, filter 0.3s
+  img
+    max-width 100%
+    max-height 100%
+    min-height 0
+    place-self center
+    border-radius 10px
+  figcaption
+    text-align center
+    color white
+    font-size 50px
+    font-weight 900
+  &.reveal figure:not(.winner)
+    opacity 0.3
+    filter grayscale(1)
+  &.reveal figure.winner
+    img
+      outline 8px solid yellow
+      outline-offset -8px
+    figcaption
+      color yellow
+
 .bubbles
   span
     line-height:1
