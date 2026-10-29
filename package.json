@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "vite build --out-dir docs --base=/Syntax-Live//"
+    "build": "vite build --out-dir docs --base=/Syntax-Live// && cp slides.js docs/"
   },
   "author": "",
   "license": "ISC",
